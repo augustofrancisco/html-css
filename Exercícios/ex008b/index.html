@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Fonte Monoespaçada</h2>
+    <p>A fonte monoespaçada é usada, geralmente, para que a leitura de um código fonte, por exemplo, possa ser facilitada. </p>
+    Ex: 
+    <p>document.getElementbyID('teste') é escrito na linguagem JavaScript. (escrita normal) </p>
+    <p><code>document.getElementbyID('teste') é escrito na linguagem JavaScript. (monoespaçada)</code> </p>
+    <p>Para isso, utilizamos a tag code.</p>
+    <p>No entanto, se digitarmos um código em qualquer linguagem, devemos utilizar a tag pre, pois caso contrário, o código não ficará disposto da maneira em que foi digitado no editor.</p>
+    <p>Sem a tag pre:</p>
+    <p><code>
+    def verificar_par(numero):
+        if numero % 2 == 0:
+            return True
+        else:
+            return False
+    numero = int(input("Digite um número inteiro: "))
+    if verificar_par(numero):
+        print(numero, "é um número par.")
+    else:
+        print(numero, "não é um número par.")
+    </code>
+    </p>
+    <p>Com a tag pre:</p>
+    <p><pre>
+        <code>
+def verificar_par(numero):
+    if numero % 2 == 0:
+        return True
+    else:
+        return False
+numero = int(input("Digite um número inteiro: "))
+if verificar_par(numero):
+    print(numero, "é um número par.")
+else:
+    print(numero, "não é um número par.")
+    </code>
+    </pre></p>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Wiliam Pereira Alves, no seu livro HTML & CSS:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_CSS_Aprenda_como_construir_p%C3%A1ginas/_fJPEAAAQBAJ?hl=pt-BR&gbpv=1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum consequuntur quas quasi. Rem a dolore corporis officiis, pariatur expedita voluptate eaque impedit voluptatibus ab? Amet totam optio sit natus?</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a codar em html</bdo></p>
+</body>
+</html>

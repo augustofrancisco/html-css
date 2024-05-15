@@ -1,0 +1,58 @@
+h1 {
+    width: 350px;
+    height: 75px;
+    background-color: lightgray;
+    text-align: center;
+    border-width: 25px;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+    outline-width: 30px;
+    outline-style: solid;
+    outline-color: violet;
+    /* margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin: auto; */
+
+    margin: 10px auto 10px auto;
+
+    }
+
+    /* Podemos simplificar os comandos acima utilizando shorthands:
+    border: 10px solid black
+
+    ordem das características: width, style, color
+
+    padding: 10px 10px 10px 10px
+
+    ordem das características: top, right, bottom, left (clockwise)
+
+    margin: 10px 10px 10px 10px
+
+    ordem das características: top, right, bottom, left (clockwise)
+
+    out-line: 5px solid yellow
+
+    ordem das características: width, style, color */
+
+    a {
+        height: 28px;
+        width: 50px;
+        background-color: aqua;
+
+        border: 7px solid hotpink;
+
+        padding: 5px 5px 5px 5px;
+
+        margin: 25px;
+    }
+
+    
+
+
+
+
+
+

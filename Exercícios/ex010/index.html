@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>Criando um Link Externo</h1>
+    <p>Para criar um <strong>link externo</strong>, ou seja, que direciona para outro site, devemos criar uma âncora utilizando a tag <mark>&lt;a&gt;</mark></p>
+    <a href="https://www.instagram.com/augustoofrancisco/" target="_blank">Instagram</a> <br>
+    <a href="https://www.barracrew.com.br/" target="_blank" hreflang="pt-br">Barra Crew</a>
+    <h1>Criando um Link Interno</h1>
+    <p>Os links internos vão fazer a relação à outras páginas do próprio site que está sendo acessado. <br>
+    Exemplo: Você pode acessar a segunda página desse site <a href="pag002.html" rel="next" target="_self">clicando aqui.</a> <br>
+    Os links internos não precisam de uma URL para fazer o direcionamento, com tanto que a página destino esteja na mesma pasta do arquivo index.
+    </p>
+    <p>Você também pode acessar a nossa página de notícias <a href="noticias/pag003.html" rel="next" target="_self">clicando aqui</a>
+    <p>Para direcionar o usuário a uma página dentro do site, mas que está localizada em uma subpasta, usa-se a tag &lt;a&gt;, no entanto, no atributo "href" devemos inserir o nome da subpasta, como no exemplo a seguir: </p>
+    <p>ex: &lt;a href="<mark>noticias/</mark>pag003.html" rel="next" target="_self">exemplo de link &lt;/a&gt;</p>
+    <p>Podemos também utilizar o atalho "ctrl + espaço" e o VSCode mostrará automaticamente as páginas e subpastas;</p>
+    <p>Para voltar de uma subpasta, no entanto, devemos utilizar o código "<strong>../</strong>" como no exemplo a seguir:</p>
+    <p>ex: &lt;a href="a href="<mark>../</mark>index.html" rel="prev" target="_self">exemplo de link &lt;/a&gt;</p>
+    </p>
+    <h1>Target (Direcionamento)</h1>
+    <p> <ul>
+            <li>O comportamento padrão de um hyperlink é abrir a página de destino na mesma aba em que você clicou no hyperlink;</li>
+            <li>No entanto, esse padrão não é adequado quando queremos que o usuário continue acessando a nossa página;</li>
+            <li>Por isso, foi criado o atributo <strong>target</strong>, que define onde será aberto a página do hyperlink clicado;</li>
+    </ul>
+    </p>
+    <h2>_blank</h2>
+    <p>vai abrir o link em uma <mark>nova janela em branco</mark>, utilizado em links <strong>externos</strong>.</p>
+    <p>Exemplo: <a href="https://www.instagram.com/augustoofrancisco/" target="_blank">Acesse meu Instagram</a></p>
+    <h2>_self</h2>
+    <p>vai abrir o link na <mark>página utilizada no momento</mark>(padrão), utilizado para links internos.</p>
+    <p>Exemplo: <a href="https://www.instagram.com/augustoofrancisco/" target="_self">Acesse meu Instagram</a></p>
+    <h2>Atributo rel</h2>
+    <p>O atributo rel foi criado para indicar a natureza do destino;</p>
+    <ul>
+        <li><em>next</em> -> indica que o link direciona para a próxima página do documento atual;</li>
+        <li><em>prev</em> -> indica que o link direciona para uma página anterior do documento atual;</li>
+        <li><em>author</em> -> indica que o link direciona para uma página do autor do artigo atual;</li>
+        <li><em>external</em> -> indica que o link direciona para uma página que não faz parte do site atual</li>
+        <li><em>nofollow</em> -> indica que é um site não endossado, como um link pago.</li>
+    </ul>
+    <h1>Links para Download</h1>
+    <p> <ul>
+            <li> <a href="fotos/formatura.rar" download="formatura.rar" type="application/zip">Download fotos em arquivo ZIP</a></li>
+        </ul>
+    </p>
+    <p> Para fazer o link para download de um arquivo criamos uma âncora com a tagb &lt;a&gt; e no parâmetro href, apontamos para o arquivo desejado;</p>
+    <p>Basta que esse arquivo esteja na mesma pasta do arquivo index ou em uma subpasta;</p>
+    <p>Exemplo:</p>
+    <p>&lt;a&gt; href="fotos/formatura.rar" download="formatura.rar" type="application/zip">Download fotos em arquivo ZIP&lt;/a&gt;</p>
+    <p>Parâmetros:
+        <ul>
+            <li>download -> indica o arquivo que será baixado;</li>
+            <li>type -> indica o tipo do arquivo que será baixado.</li>
+        </ul>
+    </p>
+    <p>Podemos checar os tipos de cada arquivo no seguinte site: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external" hreflang="en">Iana.org</a></p>
+</body>
+</html>

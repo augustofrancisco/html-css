@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 197, 158);
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    font-family: 'Inconsolata';
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgb(186, 138, 79); 
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+@font-face {
+    font-family: superfestival;
+    src: url('fonts/superfestival.ttf') format(truetype);
+}
+h1 {
+    font-family: superfestival;
+    font-size: 3em;
+    text-align: center;
+    color:#F285CC;
+}
+nav {
+    margin-bottom: 50px;
+    text-align: center;
+}
+nav > a:hover{
+    color: #F2E6D0
+}
+a {
+    font-family: superfestival;
+    margin: 0px 60px 0px 60px;
+    color: black;
+          
+}
+h2 {
+    font-family: superfestival;
+    text-align: center;
+    color: #F2E30C;
+}
+body {
+    font-family: Inconsolata;
+    font-weight: bold;
+    margin: 10px;
+    background-image: linear-gradient(45deg, #F2E30C, #d69d5f, #F285CC);
+    background-attachment: fixed;
+}
+footer {
+    height: 20px;
+    width: 280px;
+    background-color: #F2E6D0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.245);
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+} 
+p{
+    text-indent: 20px;
+}
+
+main {
+    margin-bottom: 500px;
+}
