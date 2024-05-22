@@ -12,11 +12,14 @@
         table {
             border-collapse: collapse;
             width: 300px;
+            height: 300px;
         }
 
         td {
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: top;
         }
 
         td.dado {
@@ -27,6 +30,9 @@
             background-color: lightgray;
         }
 
+        .numero {
+            text-align: right;
+        }
 
 
     </style>
@@ -39,11 +45,11 @@
         </tr>
 
         <tr class="cinza">
-        <td>A2</td> <td>B2</td> <td>C2</td>
+        <td>A2</td> <td>B2</td> <td class="numero">400</td>
         </tr>
 
         <tr>
-        <td>A3</td> <td>B3</td> <td>C3</td>
+        <td>A3</td> <td class="numero">123</td> <td>C3</td>
         </tr>
 
         <tr>

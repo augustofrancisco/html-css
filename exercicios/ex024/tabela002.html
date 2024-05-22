@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption {
+            background-color: lightgray;
+            font-size: 2em;
+            padding: 10px;
+        }
+        table th {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(85, 84, 84);
+            padding: 10px;
+        }
+
+        table td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 84, 84);
+
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            position:relative
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+
+        }
+
+        .posicao {
+            text-align: center;
+        }
+        .numero {
+            text-align: right;
+        }
+
+        .mud {
+            text-align: center;
+        }
+ 
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <caption><strong>População por Unidade Federativa</strong></caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">% da Pop. Atual</th>
+                <th scope="col">País Comparável (habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="numero">44 411 238</td>
+                <td class="mud">21,88%</td>
+                <td>Argentina (46 621 847)</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="numero">20 538 718</td>
+                <td class="mud">10,11%</td>
+                <td>Burquina Fasso (20 903 273)</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 054 524</td>
+                <td class="mud">7,91%</td>
+                <td>Camboja (16 718 965)</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="numero">14 141 626</td>
+                <td class="mud">6,96%</td>
+                <td>Zimbabwe (14 862 924)</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="numero">11 444 380</td>
+                <td class="mud">5,64%</td>
+                <td>Tunísia (11 818 619)</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10 882 965</td>
+                <td class="mud">5,36%</td>
+                <td>Portugal (10 343 066)</td>
+            </tr>
+            <tr>
+                <td class="posicao">7</td>
+                <td>Pernambuco</td>
+                <td class="numero">9 058 931</td>
+                <td class="mud">4,46%</td>
+                <td>Áustria (9 006 398)</td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td>Ceará</td>
+                <td class="numero">8 794 957</td>
+                <td class="mud">4,33%</td>
+                <td>Papua-Nova Guiné (8 947 024)</td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td>Pará</td>
+                <td class="numero">8 121 025</td>
+                <td class="mud">4,1%</td>
+                <td>Suíça (8 654 622)</td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td>Santa Catarina</td>
+                <td class="numero">7 610 361</td>
+                <td class="mud">3,75%</td>
+                <td>Laos (7 749 595)</td>
+            </tr>
+            <tr>
+                <td class="posicao">11</td>
+                <td>Goiás</td>
+                <td class="numero">7 056 495</td>
+                <td class="mud">3,47%</td>
+                <td>Bulgária (6 948 445)</td>
+            </tr>
+            <tr>
+                <td class="posicao">12</td>
+                <td>Maranhão</td>
+                <td class="numero">6 775 805</td>
+                <td class="mud">3,34%</td>
+                <td>Bulgária (6 948 445)</td>
+            </tr>
+            <tr>
+                <td class="posicao">13</td>
+                <td>Paraíba</td>
+                <td class="numero">3 974 687</td>
+                <td class="mud">1,96%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td class="posicao">14</td>
+                <td>Amazonas</td>
+                <td class="numero">3 941 613</td>
+                <td class="mud">1,94%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td class="posicao">15</td>
+                <td>Espírito Santo</td>
+                <td class="numero">3 833 712</td>
+                <td class="mud">1,89%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td class="posicao">16</td>
+                <td>Mato Grosso</td>
+                <td class="numero">3 658 649</td>
+                <td class="mud">1,8%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td class="posicao">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 302 729</td>
+                <td class="mud">1,63%</td>
+                <td>Uruguai (3 473 730)</td>
+            </tr>
+            <tr>
+                <td class="posicao">18</td>
+                <td>Piauí</td>
+                <td class="numero">3 271 199</td>
+                <td class="mud">1,61%</td>
+                <td>Bósnia e Herzegovina (3 280 819)</td>
+            </tr>
+            <tr>
+                <td class="posicao">19</td>
+                <td>Alagoas</td>
+                <td class="numero">3 127 683</td>
+                <td class="mud">1,54%</td>
+                <td>Mónaco (3 278 290)</td>
+            </tr>
+            <tr>
+                <td class="posicao">20</td>
+                <td>Distrito Federal</td>
+                <td class="numero">2 817 381</td>
+                <td class="mud">1,39%</td>
+                <td>Armênia (2 963 243)</td>
+            </tr>
+            <tr>
+                <td class="posicao">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 757 013</td>
+                <td class="mud">1,36%</td>
+                <td>Albânia (2 877 797)</td>
+            </tr>
+            <tr>
+                <td class="posicao">22</td>
+                <td>Sergipe</td>
+                <td class="numero">2 209 558</td>
+                <td class="mud">1,09%</td>
+                <td>Gabão (2 225 734)</td>
+            </tr>
+            <tr>
+                <td class="posicao">23</td>
+                <td>Rondônia</td>
+                <td class="numero">1 581 196</td>
+                <td class="mud">0,78%</td>
+                <td>Bahrein (1 701 575)</td>
+            </tr>
+            <tr>
+                <td class="posicao">24</td>
+                <td>Tocantins</td>
+                <td class="numero">1 511 460</td>
+                <td class="mud">0,74%</td>
+                <td>Guiné Equatorial (1 402 985)</td>
+            </tr>
+            <tr>
+                <td class="posicao">25</td>
+                <td>Acre</td>
+                <td class="numero">830 018</td>
+                <td class="mud">0,41%</td>
+                <td>Comores (869 601)</td>
+            </tr>
+            <tr>
+                <td class="posicao">26</td>
+                <td>Amapá</td>
+                <td class="numero">733 759</td>
+                <td class="mud">0,36%</td>
+                <td>Guiné Equatorial (786 552)</td>
+            </tr>
+            <tr>
+                <td class="posicao">27</td>
+                <td>Roraima</td>
+                <td class="numero">636 707</td>
+                <td class="mud">0,31%</td>
+                <td>Montenegro (649 335h)</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+
+
+        </tfoot>
+    </table>
+
+</body>
+</html>
